@@ -1,0 +1,6 @@
+# 著作権保護: 大学の過去問PDFは管理外
+00_exam-analysis/raw/
+
+# OS
+.DS_Store
+Thumbs.db

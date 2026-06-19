@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── 日本語対応 ──
+\usepackage{xeCJK}
+\setCJKmainfont{Hiragino Mincho ProN}
+\setCJKsansfont{Hiragino Sans}
+\setCJKmonofont{Hiragino Sans}
+
+% ── 数式 ──
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+
+% ── レイアウト ──
+\usepackage[a4paper, margin=25mm, top=28mm, bottom=28mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{新潟大学 編入試験対策}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── 色・ボックス ──
+\usepackage[dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+
+\tcbuselibrary{skins, breakable}
+
+\newtcolorbox{formula}{
+  colback=blue!5!white, colframe=blue!60!black,
+  fonttitle=\bfseries, title=公式,
+  breakable
+}
+
+\newtcolorbox{example}{
+  colback=gray!8!white, colframe=gray!50!black,
+  fonttitle=\bfseries, title=例題,
+  breakable
+}
+
+\newtcolorbox{warning}{
+  colback=red!5!white, colframe=red!70!black,
+  fonttitle=\bfseries, title=よくある間違い,
+  breakable
+}
+
+\newtcolorbox{examtip}{
+  colback=green!5!white, colframe=green!60!black,
+  fonttitle=\bfseries, title=新潟大学での出題パターン,
+  breakable
+}
+
+% ── ハイパーリンク ──
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!70!black, urlcolor=blue}
+
+% ── 目次 ──
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{4pt}
+
+% ── pandoc 互換 ──
+\usepackage{longtable, booktabs, array}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=4pt}
+\setlist[enumerate]{noitemsep, topsep=4pt}
+
+% ── フォント ──
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% ── pandoc tight-list fix ──
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% ── セクション番号なしでも目次に含める ──
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\begin{document}
+
+$if(title)$
+\begin{titlepage}
+  \centering
+  \vspace*{3cm}
+  {\Huge\bfseries $title$ \par}
+  \vspace{1cm}
+  {\Large 新潟大学 工学部 編入試験対策 \par}
+  \vspace{0.5cm}
+  {\large $date$ \par}
+  \vfill
+\end{titlepage}
+$endif$
+
+$if(toc)$
+\tableofcontents
+\newpage
+$endif$
+
+$body$
+
+\end{document}

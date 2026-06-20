@@ -4,6 +4,11 @@
 # PDF出力 (ビルド成果物)
 pdf/
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
 # OS
 .DS_Store
 Thumbs.db

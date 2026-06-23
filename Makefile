@@ -12,7 +12,7 @@ PANDOC_FLAGS = \
   -V geometry:a4paper \
   -V date:"$(shell date +%Y年%m月%d日)" \
 
-.PHONY: all math physics drills clean check
+.PHONY: all math physics drills clean check status coach analyze
 
 all: math physics
 
@@ -61,6 +61,15 @@ check:
 	@xelatex --version 2>/dev/null | head -1 || echo "xelatex: not found (要: brew install basictex)"
 	@echo "MATH_SRC: $(MATH_SRC)"
 	@echo "PHYSICS_SRC: $(PHYSICS_SRC)"
+
+status:
+	@python3 scripts/report.py
+
+coach:
+	@python3 scripts/coach.py
+
+analyze:
+	@python3 scripts/analyze_mock.py
 
 clean:
 	rm -f $(PDF_DIR)/*.pdf

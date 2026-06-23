@@ -12,3 +12,8 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Learner session state (personal, not source)
+06_progress/mastery-state.json
+06_progress/daily-coaching-report.md
+06_progress/session-log.md

@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # L5 配列 — 類題ドリル (30問)
 
 > 1D配列・2D配列・文字列配列・strlen/strcpy/strcmp

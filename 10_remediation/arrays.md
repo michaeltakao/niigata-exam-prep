@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # Remediation: Arrays (L05) — Tier-1★
 
 **Trigger**: Score < 50% on L05 drills, or Mastery Band ≤ 1 (Recognition).  

@@ -1,0 +1,13 @@
+theme: minima
+title: 新潟大学 編入試験対策
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+exclude:
+  - scripts/
+  - templates/
+  - "*.py"
+  - Makefile
+  - "*.latex"

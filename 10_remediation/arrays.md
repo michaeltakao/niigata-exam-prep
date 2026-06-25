@@ -138,6 +138,7 @@ int main(void) {
 
 ### Example 4: 2D Array Traversal
 
+{% raw %}
 ```c
 #include <stdio.h>
 int main(void) {
@@ -152,6 +153,7 @@ int main(void) {
     return 0;
 }
 ```
+{% endraw %}
 
 **Memory layout** (row-major):
 

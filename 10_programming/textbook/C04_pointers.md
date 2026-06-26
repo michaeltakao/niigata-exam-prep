@@ -8,7 +8,8 @@ title: C04 ポインタ・構造体
 
 **ポインタ** = 変数のメモリアドレスを格納する変数。
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 ```c
 int a = 5;
 int *p = &a;    // p は a のアドレスを持つ
@@ -21,9 +22,11 @@ int *p = &a;    // p は a のアドレスを持つ
 |---|---|
 | `&変数` | 変数のアドレスを得る |
 | `*ポインタ` | ポインタが指す先の値 (デリファレンス) |
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 int a = 10;
 int *p = &a;
@@ -35,13 +38,15 @@ printf("%d\n", *p);   // 10  (ポインタ経由で同じ値)
 *p = 20;              // ポインタ経由で書き換え
 printf("%d\n", a);    // 20  (a も変わる)
 ```
-:::
+
+</div>
 
 ---
 
 ## 2. ポインタと配列
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 配列名は先頭要素へのポインタと等価:
 
 ```c
@@ -50,9 +55,11 @@ int *p = a;       // p = &a[0] と同じ
 
 a[i]   ≡  *(a + i)   ≡  *(p + i)   ≡  p[i]
 ```
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 int a[] = {10, 20, 30};
 int *p = a;
@@ -64,17 +71,21 @@ printf("%d\n", p[2]);     // 30
 p++;                      // p が a[1] を指すようになる
 printf("%d\n", *p);       // 20
 ```
-:::
 
-::: warning
+</div>
+
+<div class="callout callout-warning" markdown="1">
+
 `a++` は**不可** (配列名はポインタ定数)。`p++` は可 (ポインタ変数)。
-:::
+
+</div>
 
 ---
 
 ## 3. ポインタを引数に渡す (値の交換)
 
-::: example
+<div class="callout callout-example" markdown="1">
+
 ```c
 void swap(int *x, int *y) {
     int tmp = *x;
@@ -89,7 +100,8 @@ int main() {
     return 0;
 }
 ```
-:::
+
+</div>
 
 ---
 
@@ -97,7 +109,8 @@ int main() {
 
 関連する変数をまとめる。
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 ```c
 struct 構造体名 {
     型 メンバ1;
@@ -112,9 +125,11 @@ typedef struct {
 } 型名;
 型名 変数名;
 ```
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 typedef struct {
     char name[20];
@@ -128,7 +143,8 @@ int main() {
     return 0;
 }
 ```
-:::
+
+</div>
 
 ### 構造体のポインタ → `->` 演算子
 
@@ -157,14 +173,17 @@ free(a);    // 必ず解放
 
 ## 6. 新潟大学での出題パターン
 
-::: examtip
+<div class="callout callout-examtip" markdown="1">
+
 - `*p`、`&a`、`p++` の意味を問う穴埋め
 - ポインタを使った `swap` 関数の実装
 - 配列とポインタ演算の出力結果トレース
 - 構造体のメンバアクセス (`s.age` vs `p->age`)
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 **出力結果を書け:**
 
 ```c
@@ -174,4 +193,5 @@ printf("%d %d %d\n", *p, *(p-1), *(p+1));
 ```
 
 **答え:** `4 1 1`
-:::
+
+</div>

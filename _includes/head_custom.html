@@ -1,0 +1,28 @@
+<!-- ==========================================================================
+     head_custom.html — just-the-docs の <head> フック
+     MathJax 3 を読み込み、数式を描画する。
+
+     なぜ MathJax 3 か:
+       GitHub Pages の kramdown(math_engine: mathjax)は数式を
+       インライン \(...\) / ディスプレイ \[...\] で出力する（実機HTMLで確認済み）。
+       MathJax 3 はこの 2 つの区切りを既定で処理するため整合する。
+       ($$...$$ や $...$ は kramdown が既に変換済みなので MathJax 側では無効化し、
+        コード中の $ などを誤って数式化しない)
+     ========================================================================== -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [["\\(", "\\)"]],
+      displayMath: [["\\[", "\\]"]],
+      processEscapes: true,
+      tags: "none"
+    },
+    options: {
+      // コード・整形済みテキストは数式処理から除外
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code",
+                     "annotation", "annotation-xml"],
+      ignoreHtmlClass: "no-mathjax"
+    }
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>

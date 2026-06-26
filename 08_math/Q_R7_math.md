@@ -10,7 +10,7 @@ title: 数学 過去問 R7
 
 ## 問題 I — 重積分
 
-領域 $D = \{(x,y) \mid 0 \le x \le 1,\; 0 \le y \le x\}$ 上の二重積分を計算せよ。
+領域 $$D = \{(x,y) \mid 0 \le x \le 1,\; 0 \le y \le x\}$$ 上の二重積分を計算せよ。
 
 **(1)**
 $$\iint_D xy \, dA$$
@@ -41,11 +41,11 @@ $$y'' - 3y' + 2y = e^{3x}$$
 
 $$A = \begin{pmatrix}1&2&0\\3&1&-1\\2&4&1\end{pmatrix}$$
 
-**(1)** $\det(A)$ を求めよ。
+**(1)** $$\det(A)$$ を求めよ。
 
-**(2)** $A$ が正則行列かどうか判定し、正則なら $A^{-1}$ を求めよ。
+**(2)** $$A$$ が正則行列かどうか判定し、正則なら $$A^{-1}$$ を求めよ。
 
-**(3)** 3つのベクトル $\mathbf{a}_1=(1,3,2)$, $\mathbf{a}_2=(2,1,4)$, $\mathbf{a}_3=(0,-1,1)$ を 3 辺とする平行六面体の体積を求めよ。
+**(3)** 3つのベクトル $$\mathbf{a}_1=(1,3,2)$$, $$\mathbf{a}_2=(2,1,4)$$, $$\mathbf{a}_3=(0,-1,1)$$ を 3 辺とする平行六面体の体積を求めよ。
 
 ---
 
@@ -55,26 +55,26 @@ $$A = \begin{pmatrix}1&2&0\\3&1&-1\\2&4&1\end{pmatrix}$$
 $$\iint_D xy\,dA=\int_0^1\int_0^x xy\,dy\,dx=\int_0^1 x\cdot\frac{x^2}{2}dx=\int_0^1\frac{x^3}{2}dx=\frac{1}{8}$$
 
 ### I (2) 積分順序の交換
-$\int_0^1\int_y^1 e^{x^2}dx\,dy$：$x$ を先に積分しようとすると $e^{x^2}$ の原始関数がないため、順序を交換する。
+$$\int_0^1\int_y^1 e^{x^2}dx\,dy$$：$$x$$ を先に積分しようとすると $$e^{x^2}$$ の原始関数がないため、順序を交換する。
 
-領域 $D'=\{(x,y)\mid 0\le y\le x,\; 0\le x\le 1\}$（同じ領域）
+領域 $$D'=\{(x,y)\mid 0\le y\le x,\; 0\le x\le 1\}$$（同じ領域）
 
 $$=\int_0^1\int_0^x e^{x^2}dy\,dx=\int_0^1 xe^{x^2}dx=\frac{1}{2}\left[e^{x^2}\right]_0^1=\frac{e-1}{2}$$
 
 ### II (1) 変数分離
-$y\,dy=x\,dx \Rightarrow \frac{y^2}{2}=\frac{x^2}{2}+C$。$y(0)=2\Rightarrow C=2$。
+$$y\,dy=x\,dx \Rightarrow \frac{y^2}{2}=\frac{x^2}{2}+C$$。$$y(0)=2\Rightarrow C=2$$。
 
-$y=\sqrt{x^2+4}$（$y>0$）
+$$y=\sqrt{x^2+4}$$（$$y>0$$）
 
 ### II (2) 特性方程式
-$r^2-3r+2=0 \Rightarrow (r-1)(r-2)=0 \Rightarrow r=1,2$
+$$r^2-3r+2=0 \Rightarrow (r-1)(r-2)=0 \Rightarrow r=1,2$$
 
-一般解: $y=C_1e^x+C_2e^{2x}$
+一般解: $$y=C_1e^x+C_2e^{2x}$$
 
 ### II (3) 非同次
-特殊解を $y_p=Ae^{3x}$ と仮定。$9A-9A+2A=1 \Rightarrow A=\frac{1}{2}$
+特殊解を $$y_p=Ae^{3x}$$ と仮定。$$9A-9A+2A=1 \Rightarrow A=\frac{1}{2}$$
 
-一般解: $y=C_1e^x+C_2e^{2x}+\frac{1}{2}e^{3x}$
+一般解: $$y=C_1e^x+C_2e^{2x}+\frac{1}{2}e^{3x}$$
 
 ### III (1)
 $$\det(A)=1(1\cdot1-(-1)\cdot4)-2(3\cdot1-(-1)\cdot2)+0 = 5-2\cdot5 = \mathbf{-5}$$
@@ -82,13 +82,13 @@ $$\det(A)=1(1\cdot1-(-1)\cdot4)-2(3\cdot1-(-1)\cdot2)+0 = 5-2\cdot5 = \mathbf{-5
 （余因子展開、第1行で展開）
 
 ### III (2)
-$\det(A)=-5\neq0$ なので**正則**。
+$$\det(A)=-5\neq0$$ なので**正則**。
 
 $$A^{-1}=\frac{1}{-5}\begin{pmatrix}5&-2&-2\\-5&1&1\\10&0&-5\end{pmatrix}$$
 
 （余因子行列の転置 ÷ det を計算）
 
 ### III (3)
-$A$ の行ベクトル = 3つのベクトル（列ベクトルとして縦に並べると $A^T$）
+$$A$$ の行ベクトル = 3つのベクトル（列ベクトルとして縦に並べると $$A^T$$）
 
-$\det(A)$ の絶対値 = 体積 $= |\det(A)| = \mathbf{5}$
+$$\det(A)$$ の絶対値 = 体積 $$= |\det(A)| = \mathbf{5}$$

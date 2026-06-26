@@ -6,14 +6,16 @@ title: C01 基本構文 — 変数・型・制御構造
 
 ## 1. データ型と変数宣言
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 | 型 | バイト数 | 値の範囲 | 使い方 |
 |---|---|---|---|
 | `int` | 4 | −2^31 〜 2^31−1 | 整数全般 |
 | `double` | 8 | 倍精度浮動小数点 | 実数計算 |
 | `char` | 1 | 0〜255 (ASCII) | 文字・小整数 |
 | `float` | 4 | 単精度浮動小数点 | メモリ節約時 |
-:::
+
+</div>
 
 ```c
 int a = 10;
@@ -22,17 +24,20 @@ char c = 'A';     // シングルクォート
 char s[] = "hello"; // 文字列はダブルクォート
 ```
 
-::: warning
+<div class="callout callout-warning" markdown="1">
+
 - `int / int` は **整数除算**。`3 / 2 = 1`（小数切り捨て）
 - `double d = 3 / 2;` でも右辺が整数除算されて `1.0` になる
 - `double d = 3.0 / 2;` または `(double)3 / 2` にすること
-:::
+
+</div>
 
 ---
 
 ## 2. printf / scanf
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 | 書式指定子 | 型 |
 |---|---|
 | `%d` | int |
@@ -40,9 +45,11 @@ char s[] = "hello"; // 文字列はダブルクォート
 | `%lf` | double (scanf では必須) |
 | `%c` | char |
 | `%s` | 文字列 |
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 #include <stdio.h>
 int main() {
@@ -54,7 +61,8 @@ int main() {
     return 0;
 }
 ```
-:::
+
+</div>
 
 ---
 
@@ -74,15 +82,18 @@ if (x > 0) {
 
 ### for ループ
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 ```
 for (初期化; 条件; 更新) {
     処理;
 }
 ```
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 // 1 から 10 の和
 int sum = 0;
@@ -91,7 +102,8 @@ for (int i = 1; i <= 10; i++) {
 }
 printf("sum = %d\n", sum);   // 55
 ```
-:::
+
+</div>
 
 ### while ループ
 
@@ -115,15 +127,18 @@ switch (x) {
 }
 ```
 
-::: warning
+<div class="callout callout-warning" markdown="1">
+
 `break` を忘れると次の `case` も実行される（フォールスルー）。意図しない場合は必ず `break` を入れる。
-:::
+
+</div>
 
 ---
 
 ## 4. 演算子まとめ
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 | 種類 | 演算子 |
 |---|---|
 | 算術 | `+  -  *  /  %` |
@@ -131,20 +146,24 @@ switch (x) {
 | 論理 | `&&` (AND)、`||` (OR)、`!` (NOT) |
 | 代入 | `=  +=  -=  *=  /=` |
 | インクリメント | `++n` (前置)、`n++` (後置) |
-:::
+
+</div>
 
 ---
 
 ## 5. 新潟大学での出題パターン
 
-::: examtip
+<div class="callout callout-examtip" markdown="1">
+
 - `printf` の出力結果を手でトレースして書かせる問題
 - `for` ループの変数 `i` の値の変化を追う
 - `%d` と `%f` の違い、整数除算の落とし穴
 - `if` のネスト（条件の読み取り）
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 **出力結果を書け:**
 
 ```c
@@ -156,7 +175,8 @@ for (int i = 0; i < 3; i++) {
 ```
 
 **答え:** `0 1 2`
-:::
+
+</div>
 
 ---
 
@@ -164,12 +184,14 @@ for (int i = 0; i < 3; i++) {
 
 スコープとは変数が「どこから見えるか」の範囲。新潟大学では「この変数の値は？」という穴埋め問題で必要になる。
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 | 種類 | 宣言場所 | 有効範囲 |
 |---|---|---|
 | **ローカル変数** | 関数・ブロック内 `{}` | そのブロック内のみ |
 | **グローバル変数** | 関数の外 | プログラム全体 |
-:::
+
+</div>
 
 ```c
 #include <stdio.h>
@@ -189,13 +211,16 @@ int main() {
 }
 ```
 
-::: warning
+<div class="callout callout-warning" markdown="1">
+
 - ブロック `{}` を出ると、その中で宣言したローカル変数は消える
 - 同名の変数が外と内にある場合、**内側が優先**（シャドーイング）
 - グローバル変数の多用は避ける（副作用のバグ原因になる）
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 **穴埋め問題（スコープ）:**
 
 ```c
@@ -213,7 +238,8 @@ int main() {
 
 **(A)** `20`（内側のブロックの `a`）  
 **(B)** `10`（main の `a`。内側ブロックの `a` はすでに消えた）
-:::
+
+</div>
 
 ---
 

@@ -6,19 +6,21 @@ title: P03 摩擦・斜面
 
 ## 1. 摩擦力の種類
 
-::: formula
-**静止摩擦力** $f_s$: 物体が動いていないとき
+<div class="callout callout-formula" markdown="1">
+
+**静止摩擦力** $$f_s$$: 物体が動いていないとき
 
 $$0 \le f_s \le \mu_s N$$
 
-最大静止摩擦力: $f_{s,\max} = \mu_s N$
+最大静止摩擦力: $$f_{s,\max} = \mu_s N$$
 
-**動摩擦力** $f_k$: 物体が動いているとき
+**動摩擦力** $$f_k$$: 物体が動いているとき
 
 $$f_k = \mu_k N \quad (\mu_k < \mu_s)$$
-:::
 
-**ポイント**: 静止摩擦力は 0 から $\mu_s N$ の間で「必要な大きさ」に自動的になる
+</div>
+
+**ポイント**: 静止摩擦力は 0 から $$\mu_s N$$ の間で「必要な大きさ」に自動的になる
 
 ---
 
@@ -26,16 +28,18 @@ $$f_k = \mu_k N \quad (\mu_k < \mu_s)$$
 
 ### 設定
 
-傾角 $\phi$ の斜面上に質量 $M$ の物体。
-斜面方向 ($s$) と法線方向 ($n$) に分解する。
+傾角 $$\phi$$ の斜面上に質量 $$M$$ の物体。
+斜面方向 ($$s$$) と法線方向 ($$n$$) に分解する。
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 法線方向 (加速度なし):
 $$N = Mg\cos\phi$$
 
 斜面方向:
 $$Ma = Mg\sin\phi - f$$
-:::
+
+</div>
 
 ### 静止条件
 
@@ -47,36 +51,42 @@ $$\therefore\quad \tan\phi \le \mu_s$$
 
 ## 3. 例題 — 斜面上の静力学 (新潟大学 R8 問題II)
 
-::: example
-$M$、傾角 $\phi$、静摩擦係数 $\mu_s=0.6$, $\phi=30°$
+<div class="callout callout-example" markdown="1">
 
-**Step 1**: $N=Mg\cos30°=\frac{\sqrt{3}}{2}Mg$
+$$M$$、傾角 $$\phi$$、静摩擦係数 $$\mu_s=0.6$$, $$\phi=30°$$
 
-**Step 2**: 静止条件 $\tan30°=\frac{1}{\sqrt{3}}\approx0.577 < 0.6=\mu_s$ → **静止する** ✓
+**Step 1**: $$N=Mg\cos30°=\frac{\sqrt{3}}{2}Mg$$
 
-**斜面上へ押し上げる力** ($\mu_k=0.5$):
+**Step 2**: 静止条件 $$\tan30°=\frac{1}{\sqrt{3}}\approx0.577 < 0.6=\mu_s$$ → **静止する** ✓
+
+**斜面上へ押し上げる力** ($$\mu_k=0.5$$):
 
 摩擦力は今度は下向き (物体が上に動くので):
 $$F = Mg\sin\phi + \mu_k Mg\cos\phi = Mg(\sin30°+0.5\cos30°)$$
 $$= Mg(0.5+0.5\times0.866) = 0.933Mg$$
-:::
+
+</div>
 
 ---
 
 ## 4. よくある間違い
 
-::: warning
+<div class="callout callout-warning" markdown="1">
+
 - **静止摩擦の向き**: 物体が「滑ろうとする方向」の逆
 - **押し上げるとき摩擦は下向き**: 動摩擦は必ず運動方向の逆
-- **$N=mg$ は水平面のみ**: 斜面では $N=mg\cos\phi$
-:::
+- **$$N=mg$$ は水平面のみ**: 斜面では $$N=mg\cos\phi$$
+
+</div>
 
 ---
 
 ## 5. 新潟大学での出題パターン
 
-::: examtip
+<div class="callout callout-examtip" markdown="1">
+
 - **R8 問題II**: 斜面静力学 (静止判定 + 最小押し上げ力)
 - **R7 問題I**: 摩擦付きの連立運動方程式
-- **計算手順**: 法線方向で $N$ を求め→摩擦力を計算→斜面方向に適用
-:::
+- **計算手順**: 法線方向で $$N$$ を求め→摩擦力を計算→斜面方向に適用
+
+</div>

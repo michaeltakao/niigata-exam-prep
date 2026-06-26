@@ -6,7 +6,8 @@ title: C02 配列・文字列
 
 ## 1. 配列の基本
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 ```c
 型 配列名[要素数];
 型 配列名[要素数] = {値1, 値2, ...};
@@ -14,9 +15,11 @@ title: C02 配列・文字列
 
 - インデックスは **0 始まり**: `a[0]`, `a[1]`, ..., `a[n-1]`
 - 配列の範囲外アクセスは未定義動作 (バグの元)
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 int a[5] = {10, 20, 30, 40, 50};
 printf("%d\n", a[0]);    // 10
@@ -29,15 +32,17 @@ for (int i = 0; i < 5; i++) {
 }
 printf("sum = %d\n", sum);   // 150
 ```
-:::
+
+</div>
 
 ---
 
 ## 2. バブルソート (最重要)
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 隣り合う要素を比較・交換を繰り返してソートする。  
-計算量: $O(n^2)$
+計算量: $$O(n^2)$$
 
 ```c
 for (int i = 0; i < n-1; i++) {
@@ -50,15 +55,18 @@ for (int i = 0; i < n-1; i++) {
     }
 }
 ```
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 `{5, 3, 1, 4, 2}` を昇順ソート:
 
 パス1後: `{3, 1, 4, 2, 5}`  
 パス2後: `{1, 3, 2, 4, 5}`  
 ...最終: `{1, 2, 3, 4, 5}`
-:::
+
+</div>
 
 ---
 
@@ -73,7 +81,8 @@ int m[3][3] = {
 printf("%d\n", m[1][2]);    // 6 (2行目、3列目)
 ```
 
-::: example
+<div class="callout callout-example" markdown="1">
+
 **行列の対角成分の和 (トレース):**
 
 ```c
@@ -83,7 +92,8 @@ for (int i = 0; i < 3; i++) {
 }
 // trace = 1 + 5 + 9 = 15
 ```
-:::
+
+</div>
 
 ---
 
@@ -91,7 +101,8 @@ for (int i = 0; i < 3; i++) {
 
 C言語の文字列は `char` 配列 + 末尾の `\0` (ヌル文字)。
 
-::: formula
+<div class="callout callout-formula" markdown="1">
+
 ```c
 char s[] = "hello";    // {'h','e','l','l','o','\0'} として格納
 ```
@@ -104,9 +115,11 @@ char s[] = "hello";    // {'h','e','l','l','o','\0'} として格納
 | `strcmp(s1, s2)` | 比較 (等しければ 0) |
 
 **要** `#include <string.h>`
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -120,25 +133,31 @@ int main() {
     return 0;
 }
 ```
-:::
 
-::: warning
+</div>
+
+<div class="callout callout-warning" markdown="1">
+
 - `s1 == s2` では文字列比較できない (アドレス比較になる)。必ず `strcmp` を使う
 - `strcpy(dst, src)` で `dst` のサイズが足りないとバッファオーバーフロー
-:::
+
+</div>
 
 ---
 
 ## 5. 新潟大学での出題パターン
 
-::: examtip
+<div class="callout callout-examtip" markdown="1">
+
 - 配列の内容をトレースして「実行結果を書け」
 - ソートアルゴリズムの穴埋め (`tmp` の宣言位置、条件式)
 - `strlen` の返り値の型 (`size_t`、つまり符号なし整数)
 - 文字列と `for` ループを組み合わせた処理
-:::
 
-::: example
+</div>
+
+<div class="callout callout-example" markdown="1">
+
 **出力結果を書け:**
 
 ```c
@@ -153,4 +172,5 @@ printf("%s\n", s);
 ```
 
 **答え:** `EDCBA` (文字列の逆順)
-:::
+
+</div>

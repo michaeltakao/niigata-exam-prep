@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Acceptance Test — Exam Readiness
 
 Run this checklist when you believe you are ready for the 新潟大学 transfer exam. Every box must be checked before you are considered exam-ready. Do not self-certify if any box is unchecked.

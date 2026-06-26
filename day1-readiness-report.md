@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Day 1 Readiness Report — 2026-06-22
 
 ## Status: READY WITH NOTES

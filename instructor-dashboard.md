@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Instructor Dashboard — 新潟大学 編入試験対策 (C Programming)
 
 > **How to use:** This is your single-glance status page. Update mastery bars and scores after each session using the instructions in §6.

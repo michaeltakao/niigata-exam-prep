@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Score Tracking — Time-Series Assessment Log
 
 > Authoritative record of assessment scores over time.  

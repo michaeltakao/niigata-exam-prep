@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # High-Yield Topics — スコア効率ランキング
 
 > **Epistemic label**: **Assumption** — ROIスコアは R6–R8（3年分）の出題頻度と他大学傾向からの推算です。

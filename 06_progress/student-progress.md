@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Student Progress Tracker
 
 > **Instructions:** Check off items as completed. Log every study session. Update mastery % after each drill set. Flag weak topics immediately — do not wait until mock exams.

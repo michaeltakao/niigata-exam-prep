@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Student Usability Test — STUDENT_HOME.md
 **Date:** 2026-06-23
 **Scenario:** Complete beginner, iPad only, Obsidian installed, no instructor contact.

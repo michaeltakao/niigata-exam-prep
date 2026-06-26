@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Weekly Review
 
 Run this checklist at the end of each week. Takes approximately 30 minutes.

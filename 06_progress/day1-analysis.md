@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Day 1 Pre-Session Analysis — 2026-06-22
 
 > **⚠️ ASSUMPTION** — All mastery estimates, score predictions, and weakness rankings below

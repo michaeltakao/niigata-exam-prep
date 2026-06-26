@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Mock Exam Workflow
 
 ## Pre-Exam Setup

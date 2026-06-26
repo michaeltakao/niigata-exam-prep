@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Success Metrics
 
 Update this file after each study session. It is the single source of truth for your exam readiness trajectory.

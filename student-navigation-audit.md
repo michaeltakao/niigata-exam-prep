@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Student Navigation Audit — 2026-06-23
 
 **Scope:** Every student-facing file reachable from the repo root.

@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Learner Experience Audit
 # START_HERE.md + SCHEDULE.md
 # Audience: complete beginner, iPad only

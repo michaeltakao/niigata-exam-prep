@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # 過去問メタ分析 — 試験優先度ランキング
 
 > **Epistemic label: Assumption** — R6–R8（9問）の question-map.md データ + Mock A/B/C 概念目録から推算。

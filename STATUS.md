@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # STATUS — 新潟大学 編入試験対策
 
 ## Now

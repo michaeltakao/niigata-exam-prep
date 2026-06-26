@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Exam Survival Mode — 緊急14日戦略
 
 > **対象**: 診断スコア 1/100、C言語完全初心者、試験まで ≤14日  

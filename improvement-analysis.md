@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Improvement Analysis
 
 > Synthesis document. Reads from `baseline-assessment.md` and `score-tracking.md`.  

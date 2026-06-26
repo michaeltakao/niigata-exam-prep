@@ -5,13 +5,18 @@ nav_exclude: true
 # STATUS — 新潟大学 編入試験対策
 
 ## Now
-- **適応型 LMS 層 完成 (2026-06-21)** — 17 ファイル追加
-  - 進捗追跡、習熟度ルーブリック、間隔反復スケジュール
-  - 4 学習プラン、4 補習ガイド、インストラクターダッシュボード
-  - オンボーディング、模擬試験ワークフロー、成功メトリクス
-- 全教材 + Notion エクスポート 完了 (2026-06-19)
-- 36 Notion ページ作成済み（数学・物理・C言語）
-- ローカル markdown ファイル完備 (08_math/, 09_physics/, 10_programming/)
+- **学習サイト風テーマへ全面移行 完成 (2026-06-26)** — 公開サイトの「見にくい」を解消
+  - テーマ: minima → just-the-docs (remote_theme@v0.12.0)。左サイドバー＋全文検索
+  - ナビ整理: 学習者向けページのみ title 付与＝サイドバー表示。内部レポート
+    25＋06_progress 5 は nav_exclude で非表示（巨大ナビ爆発を解消）
+  - 数式: 単一 `$…$`→`$$…$$` 正規化(34ファイル/1166) + 数式内 `|`→`\vert` 退避
+    (13ファイル/76) + MathJax 3.2.2。kramdown は `\(…\)`/`\[…\]` 出力（実機確認で確定）
+  - カラーアウト: `::: type`→`<div class="callout…" markdown="1">` (18ファイル/142)
+    ＋ custom.scss で配色(📘公式/✍例題/⚠注意/💡試験のコツ)
+  - 自動化スクリプト: scripts/{inject_titles,hide_internal_nav,normalize_math,
+    convert_callouts}.py（全て冪等・dry-run付き・ruff clean）
+- **適応型 LMS 層 完成 (2026-06-21)** — 17 ファイル追加（進捗追跡・ルーブリック等）
+- 全教材 + Notion エクスポート 完了 (2026-06-19) — 36 Notion ページ
 
 ## Next
 1. LMS 活用開始 — student-onboarding.md から diagnostic-checklist.md を実施
@@ -54,6 +59,12 @@ nav_exclude: true
 ```
 
 ## Last Verified
+- 2026-06-26: just-the-docs 移行 Phase 1+2 完了・push 済 (main @ 0c80b83 ＋STATUS更新)
+  - GitHub Pages ビルド success (run 28218157137)
+  - 主要URL 全 200 (STUDENT_HOME/L04/L4ドリル/模擬A/M01/P01)
+  - ナビ内部レポート = 0、`:::` 漏れ = 0、数式 `\(…\)`/`\[…\]` 描画 (MathJax 3.2.2)
+  - M02 行列・絶対値・行列式が正しく描画、4種カラーアウトが色付きボックス化
+  - ブラウザ実機確認 (Chrome DevTools): サイドバー整理・検索動作・C言語経路遷移
 - 2026-06-21: 適応型 LMS 層 17 ファイル完成 + commit + push (michaeltakao/niigata-exam-prep)
 - 2026-06-19: 36 Notion ページ作成完了 (notion-create-pages MCP)
 - Root: https://app.notion.com/p/384fee4dad31818cba33d27d6d0dd986

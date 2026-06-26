@@ -1,0 +1,147 @@
+// ============================================================================
+//  custom.scss — just-the-docs が自動 import するカスタムスタイル
+//  目的: 日本語タイポグラフィ / カラーアウト(.callout-*) 配色 / コード微調整
+//  （libsass 互換のため @use は使わず、プレーンな CSS で記述）
+// ============================================================================
+
+// ---- 日本語タイポグラフィ --------------------------------------------------
+$jp-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
+  "Yu Gothic", "Meiryo", system-ui, sans-serif;
+
+body {
+  font-family: $jp-sans;
+}
+
+.main-content {
+  line-height: 1.85;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+
+  h1, h2, h3, h4 {
+    line-height: 1.5;
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-top: 1.6em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid #e6e8eb;
+  }
+
+  h3 {
+    margin-top: 1.3em;
+  }
+
+  // 段落・リストの行間を読みやすく
+  p, li {
+    line-height: 1.85;
+  }
+
+  // 表は横スクロール可・余白広め
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 0.5em 0.75em;
+  }
+}
+
+// ---- コードブロック微調整 --------------------------------------------------
+.main-content {
+  pre,
+  code {
+    font-family: "SFMono-Regular", "Consolas", "Liberation Mono", Menlo,
+      monospace;
+  }
+
+  pre.highlight,
+  div.highlight {
+    border-radius: 6px;
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+}
+
+// ---- カラーアウト (callout) ------------------------------------------------
+//  ::: formula/example/warning/examtip を変換した <div class="callout ..."> を着色。
+//  ラベル(📘公式 等)は ::before 擬似要素で付与する。
+.callout {
+  margin: 1.1em 0;
+  padding: 0.85em 1.1em 0.9em;
+  border-radius: 8px;
+  border-left: 5px solid;
+
+  // 先頭の見出しラベル
+  &::before {
+    display: block;
+    font-weight: 700;
+    font-size: 0.92em;
+    margin-bottom: 0.4em;
+  }
+
+  // callout 内の最初/最後の要素の余白を詰める
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// 公式 — 青
+.callout-formula {
+  background: #eef5ff;
+  border-left-color: #3b82f6;
+
+  &::before {
+    content: "📘 公式";
+    color: #1d4ed8;
+  }
+}
+
+// 例題 — 緑
+.callout-example {
+  background: #effaf1;
+  border-left-color: #22c55e;
+
+  &::before {
+    content: "✍ 例題";
+    color: #15803d;
+  }
+}
+
+// 注意 — 赤
+.callout-warning {
+  background: #fef2f2;
+  border-left-color: #ef4444;
+
+  &::before {
+    content: "⚠ 注意";
+    color: #b91c1c;
+  }
+}
+
+// 試験のコツ — 紫
+.callout-examtip {
+  background: #faf5ff;
+  border-left-color: #a855f7;
+
+  &::before {
+    content: "💡 試験のコツ";
+    color: #7e22ce;
+  }
+}
+
+// ---- MathJax: 長い数式は横スクロール、はみ出し防止 -------------------------
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+mjx-container[display="true"] {
+  margin: 0.6em 0;
+}

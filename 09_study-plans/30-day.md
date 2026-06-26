@@ -1,3 +1,8 @@
+---
+title: "30-Day Study Plan — Full Coverage + All Mock Exams"
+nav_order: 3
+---
+
 # 30-Day Study Plan — Full Coverage + All Mock Exams
 
 **Goal:** Two full passes through L01–L11, all 3 mock exams, all Tier-1★ ≥75%.  

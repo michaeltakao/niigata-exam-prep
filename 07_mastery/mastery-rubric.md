@@ -1,3 +1,7 @@
+---
+title: "Mastery Rubric — C Programming Topics"
+---
+
 # Mastery Rubric — C Programming Topics
 
 > **How to use:** After each drill or exercise, find your current band honestly. Use the "How to Advance" steps to move up. You must reach **75% (Independent)** on all Tier-1★ topics before attempting Mock Exam B. **100% (Exam-ready)** is required for full marks on exam-day.

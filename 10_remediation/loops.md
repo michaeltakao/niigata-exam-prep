@@ -1,3 +1,7 @@
+---
+title: "Remediation: Loops (L04) — Tier-1★"
+---
+
 # Remediation: Loops (L04) — Tier-1★
 
 **Trigger**: Score < 50% on L04 drills, or Mastery Band ≤ 1 (Recognition).  

@@ -1,3 +1,8 @@
+---
+title: "14-Day Study Plan — Full Coverage"
+nav_order: 2
+---
+
 # 14-Day Study Plan — Full Coverage
 
 **Goal:** Complete all 11 C topics (L01–L11), attempt Mock A on Day 12, Mock B on Day 14.  

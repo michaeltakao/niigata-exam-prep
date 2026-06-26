@@ -1,3 +1,8 @@
+---
+title: "7-Day Crash Course — Tier-1 Focus"
+nav_order: 1
+---
+
 # 7-Day Crash Course — Tier-1 Focus
 
 **Goal:** Reach ≥75% mastery on Loops, Arrays, Functions, and Pointers before any other topics.  

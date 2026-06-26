@@ -1,3 +1,7 @@
+---
+title: "Remediation: Pointers (L07) — Tier-1★"
+---
+
 # Remediation: Pointers (L07) — Tier-1★
 
 **Trigger**: Score < 50% on L07 drills, or Mastery Band ≤ 1 (Recognition).  

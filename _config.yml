@@ -1,13 +1,104 @@
-theme: minima
+# ============================================================================
+#  新潟大学 編入試験対策 — Jekyll 設定 (just-the-docs 学習サイト風テーマ)
+#  GitHub Pages のデフォルトビルドを維持し、remote_theme でテーマだけ差し替える。
+#  使用プラグインは GitHub Pages 許可リストのもののみ。
+# ============================================================================
+
 title: 新潟大学 編入試験対策
+description: 新潟大学工学部 第3年次編入試験 対策ノート（C言語・数学・物理）
+lang: ja
+
+# サイト URL / ベース URL（プロジェクトページ用。just-the-docs のナビ・検索・
+# アセット解決を確定させるため明示）
+url: "https://michaeltakao.github.io"
+baseurl: "/niigata-exam-prep"
+
+# ---- テーマ（just-the-docs を remote_theme で。タグ固定で破壊的変更を回避）----
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 plugins:
-  - jekyll-relative-links
+  - jekyll-remote-theme
+  - jekyll-include-cache   # just-the-docs が必須とする（GH Pages 許可済み）
+  - jekyll-relative-links  # .md 相対リンクを .html に解決（既存挙動を維持）
+
+# ---- just-the-docs オプション ----
+color_scheme: light
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  minimum_characters_to_search: 1   # 日本語1文字からヒット
+heading_anchors: true
+nav_sort: case_insensitive
+back_to_top: true
+back_to_top_text: "↑ ページトップへ"
+
+aux_links:
+  "GitHub":
+    - "https://github.com/michaeltakao/niigata-exam-prep"
+aux_links_new_tab: true
+
+# ---- Markdown / 数式 ----
+markdown: kramdown
+kramdown:
+  math_engine: mathjax       # 数式を \(...\) / \[...\] で出力 → MathJax 3 が描画
+  syntax_highlighter: rouge
+
 relative_links:
   enabled: true
   collections: true
+
+# ---- ページ既定値: 全ページに layout、各セクションに nav 親を一括付与 ----
+#  （title は各ページ個別。内部レポートは title 無し＝ナビ非表示のまま放置）
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: default
+  # C言語 教科書
+  - scope: { path: "02_textbook" }
+    values: { parent: "C言語 教科書" }
+  # C言語 ドリル
+  - scope: { path: "03_drills" }
+    values: { parent: "C言語 ドリル" }
+  # C言語 補強（remediation / テクニック / 旧 programming 教材）
+  - scope: { path: "10_remediation" }
+    values: { parent: "C言語 補強" }
+  - scope: { path: "07_technique-guide" }
+    values: { parent: "C言語 補強" }
+  - scope: { path: "10_programming" }
+    values: { parent: "C言語 補強" }
+  # 模擬試験
+  - scope: { path: "05_mock-exams" }
+    values: { parent: "模擬試験" }
+  # 数学
+  - scope: { path: "08_math" }
+    values: { parent: "数学" }
+  # 物理
+  - scope: { path: "09_physics" }
+    values: { parent: "物理" }
+  # 学習プラン
+  - scope: { path: "09_study-plans" }
+    values: { parent: "学習プラン" }
+  - scope: { path: "08_schedule" }
+    values: { parent: "学習プラン" }
+  - scope: { path: "01_roadmap" }
+    values: { parent: "学習プラン" }
+  - scope: { path: "07_mastery" }
+    values: { parent: "学習プラン" }
+  # 過去問・分析
+  - scope: { path: "00_exam-analysis" }
+    values: { parent: "過去問・分析" }
+  - scope: { path: "04_question-map" }
+    values: { parent: "過去問・分析" }
+
 exclude:
   - scripts/
   - templates/
   - "*.py"
   - Makefile
   - "*.latex"
+  - pdf/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .ruff_cache/

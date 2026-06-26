@@ -1,3 +1,8 @@
+---
+title: "60-Day Study Plan — Full Mastery Track"
+nav_order: 4
+---
+
 # 60-Day Study Plan — Full Mastery Track
 
 **Goal:** Three full passes, all 3 mock exams, exam simulation in Week 8, all Tier-1★ ≥80%.  

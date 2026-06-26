@@ -1,3 +1,7 @@
+---
+title: "Remediation: Functions (L06) — Tier-1★"
+---
+
 # Remediation: Functions (L06) — Tier-1★
 
 **Trigger**: Score < 50% on L06 drills, or Mastery Band ≤ 1 (Recognition).  

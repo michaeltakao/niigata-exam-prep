@@ -94,13 +94,47 @@ def _restore(text: str, stash: list[str], kind: str) -> str:
     return text
 
 
-def _normalize_segment(segment: str) -> tuple[str, int]:
-    """Normalise inline math in a single non-code ``segment``.
+def _escape_pipes_in_math(text: str) -> tuple[str, int]:
+    r"""Replace bare ``|`` with ``\vert`` inside every ``$$...$$`` span.
+
+    kramdown performs block-level table parsing **before** span-level math, so a
+    literal ``|`` inside ``$$...$$`` (e.g. ``$$(A\,|\,I)$$`` or ``$$|x|$$``) is
+    split into table cells, corrupting the equation. ``\vert`` renders as an
+    identical vertical bar in MathJax but contains no ``|`` character, so the
+    table parser is never triggered. (Verified: this corpus has no ``\|`` norm
+    macro, so an unconditional replacement is safe; ``\left|``/``\right|`` become
+    the valid ``\left\vert``/``\right\vert``.)
 
     Returns
     -------
     tuple[str, int]
-        ``(new_segment, n_inline_converted)``.
+        ``(new_text, n_pipes_escaped)``.
+    """
+    count = 0
+
+    def _repl(match: re.Match[str]) -> str:
+        nonlocal count
+        span = match.group(0)
+        n = span.count("|")
+        if n:
+            count += n
+            span = span.replace("|", r"\vert ")
+        return span
+
+    return _DISPLAY_RE.sub(_repl, text), count
+
+
+def _normalize_segment(segment: str) -> tuple[str, int]:
+    """Normalise inline math in a single non-code ``segment``.
+
+    Converts inline ``$...$`` to ``$$...$$`` and escapes literal ``|`` inside
+    every math span.
+
+    Returns
+    -------
+    tuple[str, int]
+        ``(new_segment, n_edits)`` where ``n_edits`` counts inline conversions
+        plus pipes escaped.
     """
     protected, display = _protect(segment, _DISPLAY_RE, "D")
     protected, code = _protect(protected, _INLINE_CODE_RE, "C")
@@ -116,6 +150,11 @@ def _normalize_segment(segment: str) -> tuple[str, int]:
 
     protected = _restore(protected, code, "C")
     protected = _restore(protected, display, "D")
+
+    # Now every math span is $$...$$; neutralise pipes that would otherwise be
+    # parsed as Markdown table delimiters.
+    protected, pipes = _escape_pipes_in_math(protected)
+    count += pipes
     return protected, count
 
 
@@ -150,7 +189,7 @@ def plan_file(path: Path) -> Change | None:
     if "$" not in text:
         return None
     new_text, count = normalize_text(text)
-    if new_text == text or count == 0:
+    if new_text == text:
         return None
     return Change(path=path, new_text=new_text, old_text=text, count=count)
 
@@ -198,7 +237,7 @@ def main(argv: list[str] | None = None) -> int:
     for change in changes:
         rel = change.path.relative_to(args.root)
         total += change.count
-        print(f"{rel}: {change.count} inline span(s)")
+        print(f"{rel}: {change.count} math edit(s)")
         if args.show_diff:
             diff = difflib.unified_diff(
                 change.old_text.splitlines(keepends=True),
@@ -208,7 +247,7 @@ def main(argv: list[str] | None = None) -> int:
             )
             sys.stdout.write("".join(diff))
 
-    print(f"\nnormalize_math: {len(changes)} file(s), {total} inline span(s).")
+    print(f"\nnormalize_math: {len(changes)} file(s), {total} math edit(s).")
     if not args.apply:
         print("Dry-run only. Re-run with --apply to write.")
         return 0

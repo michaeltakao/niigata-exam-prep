@@ -101,7 +101,7 @@ $$y''-y=\sin x$$
 
 **解答**:
 
-(1) 変数分離: $$\frac{dy}{y}=\frac{dx}{x}$$; $$\ln|y|=\ln|x|+C$$; $$y=Ax$$。$$y(1)=2 \Rightarrow A=2$$
+(1) 変数分離: $$\frac{dy}{y}=\frac{dx}{x}$$; $$\ln\vert y\vert =\ln\vert x\vert +C$$; $$y=Ax$$。$$y(1)=2 \Rightarrow A=2$$
 
 $$y=2x$$
 
@@ -139,7 +139,7 @@ $$y=C_1e^x+C_2e^{-x}-\frac{1}{2}\sin x$$
 
 (3) $$\det\begin{pmatrix}2&1&-1\\1&-1&2\\3&0&1\end{pmatrix}=2(-1-0)-1(1-6)+(-1)(0+3)=−2+5−3=0$$
 
-体積 $$=|0|=0$$ (3ベクトルが同一平面内)
+体積 $$=\vert 0\vert =0$$ (3ベクトルが同一平面内)
 
 ---
 

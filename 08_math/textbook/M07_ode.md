@@ -33,7 +33,7 @@ $$\frac{dy}{dx} = 2xy$$, $$y(0)=1$$
 
 **Step 1**: 分離 $$\frac{dy}{y} = 2x\,dx$$
 
-**Step 2**: 積分 $$\ln|y| = x^2 + C$$
+**Step 2**: 積分 $$\ln\vert y\vert  = x^2 + C$$
 
 **Step 3**: $$y = Ae^{x^2}$$ ($$A=e^C$$)
 

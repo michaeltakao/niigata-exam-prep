@@ -73,7 +73,7 @@ $$v_x(t) = v_0\cos\theta\cdot e^{-(k/m)t}$$
 この問題で使う ODE 解法 = **M07 の1階線形ODE**と同じ。
 
 $$m\dot{v}+kv=-mg$$ を変数分離で解く:
-$$\frac{dv}{mg/k+v}=-\frac{k}{m}dt \Rightarrow \ln\left|v+\frac{mg}{k}\right|=-\frac{k}{m}t+C$$
+$$\frac{dv}{mg/k+v}=-\frac{k}{m}dt \Rightarrow \ln\left\vert v+\frac{mg}{k}\right\vert =-\frac{k}{m}t+C$$
 
 ---
 

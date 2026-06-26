@@ -77,7 +77,7 @@ $$\dim\ker(f) + \dim\operatorname{Im}(f) = n \quad (n = \text{定義域の次元
 
 ### 手順 — ker を求める
 
-1. $$(A\,|\,\mathbf{0})$$ を作る
+1. $$(A\,\vert \,\mathbf{0})$$ を作る
 2. 行基本変形で行簡約形 (RREF) にする
 3. 自由変数を含む形で解を書く
 

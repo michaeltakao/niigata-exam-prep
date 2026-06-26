@@ -79,11 +79,11 @@ $$\mathbf{a}\cdot\mathbf{b} = 1\cdot2 + 2\cdot(-1) + (-1)\cdot3 = 2-2-3 = \mathb
 $$\mathbf{a}\times\mathbf{b} = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\1&2&-1\\2&-1&3\end{vmatrix} = \mathbf{i}(6-1)-\mathbf{j}(3+2)+\mathbf{k}(-1-4) = \mathbf{(5,-5,-5)}$$
 
 ### I (3) 体積
-スカラー三重積 $$|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|$$ を計算する。
+スカラー三重積 $$\vert \mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})\vert $$ を計算する。
 
 $$\mathbf{b}\times\mathbf{c} = \begin{vmatrix}\mathbf{i}&\mathbf{j}&\mathbf{k}\\2&-1&3\\1&1&1\end{vmatrix} = (-1-3, 3-2, 2+1) = (-4,1,3)$$
 
-$$\mathbf{a}\cdot(-4,1,3) = -4+2-3 = -5$$、体積 $$= |-5| = \mathbf{5}$$
+$$\mathbf{a}\cdot(-4,1,3) = -4+2-3 = -5$$、体積 $$= \vert -5\vert  = \mathbf{5}$$
 
 ### II (1) 表現行列
 $$A = \begin{pmatrix}1&-1&2\\2&1&0\end{pmatrix}$$
@@ -109,4 +109,4 @@ $$\int_0^\pi x\sin x\,dx = [-x\cos x]_0^\pi + \int_0^\pi\cos x\,dx = \pi + [\sin
 ### IV (1)(2)(3)
 - (1) $$\lim_{x\to0}\frac{\sin3x}{x}=3\cdot\frac{\sin3x}{3x}\to\mathbf{3}$$
 - (2) ロピタル2回: $$\frac{e^x-1}{2x}\to\frac{e^x}{2}\to\mathbf{\frac{1}{2}}$$
-- (3) 変数分離: $$\frac{dy}{y}=2x\,dx\Rightarrow\ln|y|=x^2+C\Rightarrow y=e^{x^2}$$ ($$y(0)=1$$ より $$C=0$$)
+- (3) 変数分離: $$\frac{dy}{y}=2x\,dx\Rightarrow\ln\vert y\vert =x^2+C\Rightarrow y=e^{x^2}$$ ($$y(0)=1$$ より $$C=0$$)

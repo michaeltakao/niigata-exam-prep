@@ -103,8 +103,8 @@ $$\lim_{\theta\to0}\frac{1-\cos2\theta}{\theta^2}=2 \quad\text{(R6 出題)}$$
 
 | 出題パターン | 典型例 |
 |---|---|
-| 内積・なす角 | $$\mathbf{a}\cdot\mathbf{b} = |a||b|\cos\theta$$ |
-| 外積・面積・体積 | $$|\mathbf{a}\times\mathbf{b}|$$ = 平行四辺形面積 |
+| 内積・なす角 | $$\mathbf{a}\cdot\mathbf{b} = \vert a\vert \vert b\vert \cos\theta$$ |
+| 外積・面積・体積 | $$\vert \mathbf{a}\times\mathbf{b}\vert $$ = 平行四辺形面積 |
 | 線形独立の判定 | $$\det([\mathbf{v}_1,\mathbf{v}_2,\mathbf{v}_3]) \neq 0$$ |
 
 ---

@@ -61,7 +61,7 @@ $$T=\frac{2\times2\times3\times9.8}{5}=\frac{117.6}{5}=23.52\;\text{N}$$
 
 ### I (4)
 
-時刻 $$t$$ での速度 $$|v|=|a|t$$、$$m_1$$ 上昇 $$h=\frac{1}{2}|a|t^2$$、$$m_2$$ 下降 $$h$$
+時刻 $$t$$ での速度 $$\vert v\vert =\vert a\vert t$$、$$m_1$$ 上昇 $$h=\frac{1}{2}\vert a\vert t^2$$、$$m_2$$ 下降 $$h$$
 
 $$\Delta KE = \frac{1}{2}(m_1+m_2)(at)^2$$、$$\Delta PE = (m_2-m_1)g\cdot h$$（$$m_2$$ 下がるので正）
 

@@ -21,7 +21,7 @@ $$F'(x)=f(x)$$ となる原始関数 $$F$$ を見つけて代入するだけ
 | 関数 $$f(x)$$ | 原始関数 $$F(x)$$ |
 |---|---|
 | $$x^n$$ ($$n\neq-1$$) | $$\frac{x^{n+1}}{n+1}$$ |
-| $$\frac{1}{x}$$ | $$\ln|x|$$ |
+| $$\frac{1}{x}$$ | $$\ln\vert x\vert $$ |
 | $$e^x$$ | $$e^x$$ |
 | $$\sin x$$ | $$-\cos x$$ |
 | $$\cos x$$ | $$\sin x$$ |
@@ -66,7 +66,7 @@ $$= [-x\cos x]_0^\pi + \int_0^\pi\cos x\,dx = \pi + [\sin x]_0^\pi = \pi+0 = \ma
 
 交点を $$x=\alpha, \beta$$ ($$\alpha<\beta$$) として:
 
-$$S = \int_\alpha^\beta |f(x)-g(x)|\,dx$$
+$$S = \int_\alpha^\beta \vert f(x)-g(x)\vert \,dx$$
 
 $$f(x)\ge g(x)$$ が確認できれば絶対値不要: $$S=\int_\alpha^\beta [f(x)-g(x)]\,dx$$
 

@@ -9,6 +9,13 @@ nav_order: 1
 **Daily commitment:** 3–4 hours/day  
 **Target exam score:** ≥65% (baseline pass)
 
+> **Path note (2026-07-02):** Topic numbers in this plan are the plan's own; the
+> textbook files are numbered differently (textbook: `L06_strings.md`,
+> `L07_functions.md`, `L08_pointers.md`). All file paths below point to
+> the real files — follow the paths, not the topic numbers. There is no
+> strings-specific drill; `03_drills/L8_exam.md` is the exam-style mixed
+> drill set (problems numbered E1…/H1…, not Q1–Qn).
+
 ---
 
 ## Day 1 — Diagnostic + Loops Foundation (3.5h)
@@ -19,18 +26,18 @@ nav_order: 1
 - Record baseline in `06_progress/student-progress.md` (all scores = 0%)
 
 **Afternoon (1.5h): L04 Loops — Concept**
-- Read `02_textbook/L04` fully
+- Read `02_textbook/L04_loops.md` fully
 - Trace these constructs by hand:
   - `for` loop with index
   - `while` loop with condition
   - `do-while` loop
   - nested loop
-- Complete `03_drills/L4` Q1–4
+- Complete `03_drills/L4_loops.md` Q1–4
 
 **Evening (1h): Self-Quiz**
 - Without notes: write a `for` loop that prints 1–10
 - Without notes: write a `while` loop that sums an array
-- Check answers against `02_textbook/L04`
+- Check answers against `02_textbook/L04_loops.md`
 - Record score in `06_progress/student-progress.md`
 
 **Pass criterion:** ≥60% on drills Q1–4. If below, spend 30 extra minutes re-reading before Day 2.
@@ -40,12 +47,12 @@ nav_order: 1
 ## Day 2 — Arrays (4h)
 
 **Morning (1.5h): L05 Arrays — Concept**
-- Read `02_textbook/L05` fully
+- Read `02_textbook/L05_arrays.md` fully
 - Trace: 1D array declaration, initialization, access by index
 - Trace: 2D array row-major traversal
 
 **Afternoon (1.5h): Drills**
-- Complete `03_drills/L5` Q1–6
+- Complete `03_drills/L5_arrays.md` Q1–6
 - For every wrong answer: re-read the relevant section, rework the question
 
 **Evening (1h): Combined Practice**
@@ -60,12 +67,12 @@ nav_order: 1
 ## Day 3 — Functions (4h)
 
 **Morning (1.5h): L06 Functions — Concept**
-- Read `02_textbook/L06` fully
+- Read `02_textbook/L07_functions.md` fully
 - Trace: function declaration, definition, call, return value
 - Trace: pass-by-value vs. pass-by-pointer (preview for Day 5)
 
 **Afternoon (1.5h): Drills**
-- Complete `03_drills/L6` Q1–6
+- Complete `03_drills/L6_functions.md` Q1–6
 - Draw the call stack for at least one example by hand
 
 **Evening (1h): Combined Practice**
@@ -80,13 +87,13 @@ nav_order: 1
 ## Day 4 — Pointers (4h)
 
 **Morning (1.5h): L07 Pointers — Concept**
-- Read `02_textbook/L07` fully
+- Read `02_textbook/L08_pointers.md` fully
 - Draw a memory diagram for: `int x = 5; int *p = &x;`
 - Trace: `*p = 10` (what changes?), `p++` (what changes?)
 - Trace: pointer to array, pointer as function argument
 
 **Afternoon (1.5h): Drills**
-- Complete `03_drills/L7` Q1–6
+- Complete `03_drills/L7_pointers.md` Q1–6
 - For every question: draw the memory diagram first, then answer
 
 **Evening (1h): Combined Practice**
@@ -104,15 +111,15 @@ nav_order: 1
 
 **Morning (1h): Loops Recall**
 - Without notes: write `for`, `while`, `do-while` from memory
-- Check against `02_textbook/L04`
-- Complete `03_drills/L4` Q5–8
+- Check against `02_textbook/L04_loops.md`
+- Complete `03_drills/L4_loops.md` Q5–8
 
 **Afternoon (1h): Arrays Recall**
 - Without notes: write 1D and 2D array initialization
-- Complete `03_drills/L5` Q5–8
+- Complete `03_drills/L5_arrays.md` Q5–8
 
 **Evening (1.5h): Functions + Pointers Combined**
-- Complete `03_drills/L6` Q7–8 and `03_drills/L7` Q7–8
+- Complete `03_drills/L6_functions.md` Q7–8 and `03_drills/L7_pointers.md` Q7–8
 - Write a function that takes an int pointer and doubles the value at that address
 - Record all scores in `06_progress/student-progress.md`
 
@@ -126,12 +133,12 @@ Identify your two lowest-scoring topics from Days 1–5.
 
 **Option A — Pointers weak:**
 - Read `10_remediation/pointers.md` fully
-- Redo `03_drills/L7` Q1–4 with fresh paper, draw every memory diagram
+- Redo `03_drills/L7_pointers.md` Q1–4 with fresh paper, draw every memory diagram
 - Target: ≥70% re-attempt
 
 **Option B — Arrays weak:**
 - Read `10_remediation/arrays.md` fully
-- Redo `03_drills/L5` Q1–4 focused on index errors
+- Redo `03_drills/L5_arrays.md` Q1–4 focused on index errors
 - Target: ≥70% re-attempt
 
 **Option C — Loops weak:**
@@ -155,7 +162,7 @@ Spend 1.5h on your weakest topic, then 1h on your second weakest, then 30 min re
 **Instructions:**
 1. Close all notes and textbooks — exam conditions
 2. Set a timer for 90 minutes
-3. Attempt `05_mock-exams/mock-A` in full
+3. Attempt `05_mock-exams/mock-exam-A.md` in full
 
 **After the exam (1h):**
 - Grade immediately using the answer key

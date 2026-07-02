@@ -9,6 +9,13 @@ nav_order: 3
 **Daily commitment:** 2–3 hours/day  
 **Graduation criterion:** Mock C ≥80, all Tier-1 topics ≥75%
 
+> **Path note (2026-07-02):** Topic numbers in this plan are the plan's own; the
+> textbook files are numbered differently (textbook: `L06_strings.md`,
+> `L07_functions.md`, `L08_pointers.md`). All file paths below point to
+> the real files — follow the paths, not the topic numbers. There is no
+> strings-specific drill; `03_drills/L8_exam.md` is the exam-style mixed
+> drill set (problems numbered E1…/H1…, not Q1–Qn).
+
 ---
 
 ## Week 1 (Days 1–7) — First Pass: L01–L11
@@ -18,10 +25,10 @@ nav_order: 3
 | Day | Topic | Activity | Time | Pass Criterion |
 |-----|-------|----------|------|---------------|
 | 1 | Diagnostic | Complete `diagnostic-checklist.md` + record baseline in `06_progress/student-progress.md` | 1.5h | — |
-| 2 | L01 + L02 | Read textbook + `03_drills/L1` Q1–4 + `03_drills/L2` Q1–4 | 2h | ≥60% |
-| 3 | L03 + L04★ | Read textbook + `03_drills/L3` Q1–4 + `03_drills/L4` Q1–4 | 2.5h | ≥60% |
-| 4 | L05★ + L06★ | Read textbook + `03_drills/L5` Q1–4 + `03_drills/L6` Q1–4 | 2.5h | ≥60% |
-| 5 | L07★ | Read `02_textbook/L07`, draw memory diagrams, `03_drills/L7` Q1–4 | 2.5h | ≥55% |
+| 2 | L01 + L02 | Read textbook + `03_drills/L1_variables.md` Q1–4 + `03_drills/L2_expressions.md` Q1–4 | 2h | ≥60% |
+| 3 | L03 + L04★ | Read textbook + `03_drills/L3_conditions.md` Q1–4 + `03_drills/L4_loops.md` Q1–4 | 2.5h | ≥60% |
+| 4 | L05★ + L06★ | Read textbook + `03_drills/L5_arrays.md` Q1–4 + `03_drills/L6_functions.md` Q1–4 | 2.5h | ≥60% |
+| 5 | L07★ | Read `02_textbook/L08_pointers.md`, draw memory diagrams, `03_drills/L7_pointers.md` Q1–4 | 2.5h | ≥55% |
 | 6 | L08 + L09 | Read textbook + self-quiz | 2h | ≥60% |
 | 7 | L10 + L11 + review | Read textbook + redo weakest drill set from Days 2–4 | 2.5h | ≥60% |
 
@@ -35,13 +42,13 @@ nav_order: 3
 
 | Day | Topic | Activity | Time | Pass Criterion |
 |-----|-------|----------|------|---------------|
-| 8 | L01–L03 | Spaced review (Day+7 for L01–L02): full `03_drills/L1`+`L2`+`L3` sets | 2h | ≥70% |
-| 9 | L04★ Loops | Full `03_drills/L4` + write 3 programs from memory | 2.5h | ≥70% |
-| 10 | L05★ Arrays | Full `03_drills/L5` + write array+loop program | 2.5h | ≥70% |
-| 11 | L06★ Functions | Full `03_drills/L6` + write function library (max, min, sum) | 2.5h | ≥70% |
+| 8 | L01–L03 | Spaced review (Day+7 for L01–L02): full `03_drills/L1_variables.md`+`L2_expressions.md`+`L3_conditions.md` sets | 2h | ≥70% |
+| 9 | L04★ Loops | Full `03_drills/L4_loops.md` + write 3 programs from memory | 2.5h | ≥70% |
+| 10 | L05★ Arrays | Full `03_drills/L5_arrays.md` + write array+loop program | 2.5h | ≥70% |
+| 11 | L06★ Functions | Full `03_drills/L6_functions.md` + write function library (max, min, sum) | 2.5h | ≥70% |
 | 12 | **Mock A** | 90-min timed exam, grade, route to remediation | 2.5h | ≥65% |
-| 13 | L07★ Pointers | Full `03_drills/L7` + memory diagrams | 3h | ≥65% |
-| 14 | L08–L11 | Full `03_drills/L8` + self-quiz L09–L11 | 2h | ≥65% |
+| 13 | L07★ Pointers | Full `03_drills/L7_pointers.md` + memory diagrams | 3h | ≥65% |
+| 14 | L08–L11 | Full `03_drills/L8_exam.md` + self-quiz L09–L11 | 2h | ≥65% |
 
 **Spaced rep sessions this week (per `08_schedule/review-schedule.md`):**
 - Day 8: Day+7 review for L01, L02

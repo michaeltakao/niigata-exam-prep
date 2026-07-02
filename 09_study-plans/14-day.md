@@ -9,6 +9,13 @@ nav_order: 2
 **Daily commitment:** 3–4 hours/day  
 **Target exam score:** ≥70%
 
+> **Path note (2026-07-02):** Topic numbers in this plan are the plan's own; the
+> textbook files are numbered differently (textbook: `L06_strings.md`,
+> `L07_functions.md`, `L08_pointers.md`). All file paths below point to
+> the real files — follow the paths, not the topic numbers. There is no
+> strings-specific drill; `03_drills/L8_exam.md` is the exam-style mixed
+> drill set (problems numbered E1…/H1…, not Q1–Qn).
+
 ---
 
 ## Phase 1 — Foundation (Days 1–2)
@@ -20,8 +27,8 @@ nav_order: 2
 - Record baseline scores in `06_progress/student-progress.md`
 
 **Afternoon (1.5h): L01 Variables + L02 Operators**
-- Read `02_textbook/L01` and `02_textbook/L02`
-- Complete `03_drills/L1` Q1–3 and `03_drills/L2` Q1–3
+- Read `02_textbook/L01_variables-types.md` and `02_textbook/L02_operators-expressions.md`
+- Complete `03_drills/L1_variables.md` Q1–3 and `03_drills/L2_expressions.md` Q1–3
 
 **Evening (1h): Self-quiz**
 - Write from memory: variable types, declarations, operator precedence table
@@ -34,13 +41,13 @@ nav_order: 2
 ### Day 2 — L03 Conditionals + L01–L02 Review (3h)
 
 **Morning (1h): L03 Conditionals**
-- Read `02_textbook/L03`
+- Read `02_textbook/L03_conditions.md`
 - Trace if/else chains and switch statements by hand
-- Complete `03_drills/L3` Q1–4
+- Complete `03_drills/L3_conditions.md` Q1–4
 
 **Afternoon (1h): Spaced Review (Day 3 for L01–L02)**
 - Without notes: rewrite variable declarations and operator examples
-- Complete `03_drills/L1` Q4–6 and `03_drills/L2` Q4–6
+- Complete `03_drills/L1_variables.md` Q4–6 and `03_drills/L2_expressions.md` Q4–6
 
 **Evening (1h): Self-quiz**
 - Write a complete if/else if/else chain from memory
@@ -54,8 +61,8 @@ nav_order: 2
 
 ### Day 3 — L04 Loops★ (4h)
 
-**Morning (1.5h):** Read `02_textbook/L04`, trace for/while/do-while/nested loops  
-**Afternoon (1.5h):** Complete `03_drills/L4` Q1–6  
+**Morning (1.5h):** Read `02_textbook/L04_loops.md`, trace for/while/do-while/nested loops  
+**Afternoon (1.5h):** Complete `03_drills/L4_loops.md` Q1–6  
 **Evening (1h):** Write 3 loop programs from memory, record scores
 
 **Pass criterion:** ≥65% on drills Q1–6.
@@ -64,8 +71,8 @@ nav_order: 2
 
 ### Day 4 — L05 Arrays★ (4h)
 
-**Morning (1.5h):** Read `02_textbook/L05`, trace 1D and 2D arrays  
-**Afternoon (1.5h):** Complete `03_drills/L5` Q1–6  
+**Morning (1.5h):** Read `02_textbook/L05_arrays.md`, trace 1D and 2D arrays  
+**Afternoon (1.5h):** Complete `03_drills/L5_arrays.md` Q1–6  
 **Evening (1h):** Write array + loop combined program from memory
 
 **Pass criterion:** ≥65% on drills Q1–6.
@@ -74,8 +81,8 @@ nav_order: 2
 
 ### Day 5 — L06 Functions★ (4h)
 
-**Morning (1.5h):** Read `02_textbook/L06`, trace function calls and return values  
-**Afternoon (1.5h):** Complete `03_drills/L6` Q1–6  
+**Morning (1.5h):** Read `02_textbook/L07_functions.md`, trace function calls and return values  
+**Afternoon (1.5h):** Complete `03_drills/L6_functions.md` Q1–6  
 **Evening (1h):** Write `int max(int a, int b)` and call it from main()
 
 **Pass criterion:** ≥65% on drills Q1–6.
@@ -84,8 +91,8 @@ nav_order: 2
 
 ### Day 6 — L07 Pointers★ (4h)
 
-**Morning (1.5h):** Read `02_textbook/L07`, draw memory diagrams for every example  
-**Afternoon (1.5h):** Complete `03_drills/L7` Q1–6 with memory diagrams  
+**Morning (1.5h):** Read `02_textbook/L08_pointers.md`, draw memory diagrams for every example  
+**Afternoon (1.5h):** Complete `03_drills/L7_pointers.md` Q1–6 with memory diagrams  
 **Evening (1h):** Write pointer-based swap function from memory
 
 **Pass criterion:** ≥60% on drills Q1–6.
@@ -97,15 +104,15 @@ nav_order: 2
 ### Day 7 — L08 Strings + Tier-1 Spaced Review (3.5h)
 
 **Morning (1h): L08 Strings**
-- Read `02_textbook/L08`
-- Complete `03_drills/L8` Q1–3
+- Read `02_textbook/L06_strings.md`
+- Complete `03_drills/L8_exam.md` Q1–3
 - Key functions: `strlen`, `strcpy`, `strcmp`, `strcat`
 
 **Afternoon (1.5h): Spaced Review (Day 7 for L04–L06)**
 - Without notes: write for-loop, array traversal, function with return value
-- Complete `03_drills/L4` Q7–8 and `03_drills/L5` Q7–8
+- Complete `03_drills/L4_loops.md` Q7–8 and `03_drills/L5_arrays.md` Q7–8
 
-**Evening (1h):** L07 Pointers review — redo `03_drills/L7` Q5–6
+**Evening (1h):** L07 Pointers review — redo `03_drills/L7_pointers.md` Q5–6
 
 **Pass criterion:** ≥70% on Tier-1 spaced reviews.
 
@@ -113,7 +120,7 @@ nav_order: 2
 
 ### Day 8 — L09 Structs (3h)
 
-**Morning (1.5h):** Read `02_textbook/L09`, trace struct declaration, member access, array of structs  
+**Morning (1.5h):** Read `02_textbook/L09_structs.md`, trace struct declaration, member access, array of structs  
 **Afternoon (1h):** Write struct `Student` with name/age/score, fill and print array of 3 students  
 **Evening (30min):** Record scores, update `06_progress/student-progress.md`
 
@@ -121,19 +128,19 @@ nav_order: 2
 
 ---
 
-### Day 9 — L10 File I/O (3h)
+### Day 9 — L10 Algorithms (3h)
 
-**Morning (1.5h):** Read `02_textbook/L10`, trace `fopen`/`fclose`/`fprintf`/`fscanf`  
-**Afternoon (1h):** Write a program that writes 5 integers to a file, then reads them back  
+**Morning (1.5h):** Read `02_textbook/L10_algorithms.md`, trace bubble sort and linear search by hand  
+**Afternoon (1h):** Write a program that bubble-sorts an `int array[5]` and prints the array after every pass  
 **Evening (30min):** Record scores
 
-**Pass criterion:** ≥60% self-quiz on fopen/fclose/fprintf pattern.
+**Pass criterion:** ≥60% self-quiz on sort/search traces.
 
 ---
 
 ### Day 10 — L11 Recursion (3.5h)
 
-**Morning (1.5h):** Read `02_textbook/L11`, trace factorial and Fibonacci by hand on paper  
+**Morning (1.5h):** Read `02_textbook/L11_recursion.md`, trace factorial and Fibonacci by hand on paper  
 **Afternoon (1.5h):** Write recursive `int power(int base, int exp)` and trace its call stack  
 **Evening (30min):** Record scores
 
@@ -157,7 +164,7 @@ nav_order: 2
 ### Day 12 — Mock Exam A (Full Simulation) (3h)
 
 1. Set 90-minute timer — exam conditions, no notes
-2. Attempt `05_mock-exams/mock-A` in full
+2. Attempt `05_mock-exams/mock-exam-A.md` in full
 3. Grade immediately after
 4. Record score in `06_progress/student-progress.md`
 
@@ -187,7 +194,7 @@ nav_order: 2
 ### Day 14 — Mock Exam B + Final Readiness Check (3h)
 
 1. Set 90-minute timer — exam conditions
-2. Attempt `05_mock-exams/mock-B` in full
+2. Attempt `05_mock-exams/mock-exam-B.md` in full
 3. Grade immediately
 4. Record score in `06_progress/student-progress.md`
 
@@ -211,7 +218,7 @@ nav_order: 2
 | 6 | L07 Pointers | /10 | |
 | 7 | L08 + Tier-1 review | /10 | |
 | 8 | L09 Structs | /10 | |
-| 9 | L10 File I/O | /10 | |
+| 9 | L10 Algorithms | /10 | |
 | 10 | L11 Recursion | /10 | |
 | 11 | Weak-topic review | — | |
 | 12 | Mock A | /100 | |

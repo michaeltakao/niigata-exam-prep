@@ -9,6 +9,13 @@ nav_order: 4
 **Daily commitment:** 2–3 hours/day  
 **Target exam score:** ≥80%
 
+> **Path note (2026-07-02):** Topic numbers in this plan are the plan's own; the
+> textbook files are numbered differently (textbook: `L06_strings.md`,
+> `L07_functions.md`, `L08_pointers.md`). All file paths below point to
+> the real files — follow the paths, not the topic numbers. There is no
+> strings-specific drill; `03_drills/L8_exam.md` is the exam-style mixed
+> drill set (problems numbered E1…/H1…, not Q1–Qn).
+
 ---
 
 ## Phase Overview
@@ -31,24 +38,24 @@ nav_order: 4
 | Day | Activity | Files | Time |
 |-----|----------|-------|------|
 | 1 | Diagnostic + onboarding | `diagnostic-checklist.md`, `student-onboarding.md` | 1.5h |
-| 2 | L01 Variables + L02 Operators | `02_textbook/L01`, `02_textbook/L02`, `03_drills/L1` Q1–3, `03_drills/L2` Q1–3 | 2h |
-| 3 | L03 Conditionals | `02_textbook/L03`, `03_drills/L3` Q1–4 | 2h |
-| 4 | L04 Loops★ | `02_textbook/L04`, `03_drills/L4` Q1–4 | 2.5h |
-| 5 | L05 Arrays★ | `02_textbook/L05`, `03_drills/L5` Q1–4 | 2.5h |
-| 6 | L06 Functions★ | `02_textbook/L06`, `03_drills/L6` Q1–4 | 2.5h |
-| 7 | L07 Pointers★ | `02_textbook/L07`, `03_drills/L7` Q1–4, draw memory diagrams | 3h |
+| 2 | L01 Variables + L02 Operators | `02_textbook/L01_variables-types.md`, `02_textbook/L02_operators-expressions.md`, `03_drills/L1_variables.md` Q1–3, `03_drills/L2_expressions.md` Q1–3 | 2h |
+| 3 | L03 Conditionals | `02_textbook/L03_conditions.md`, `03_drills/L3_conditions.md` Q1–4 | 2h |
+| 4 | L04 Loops★ | `02_textbook/L04_loops.md`, `03_drills/L4_loops.md` Q1–4 | 2.5h |
+| 5 | L05 Arrays★ | `02_textbook/L05_arrays.md`, `03_drills/L5_arrays.md` Q1–4 | 2.5h |
+| 6 | L06 Functions★ | `02_textbook/L07_functions.md`, `03_drills/L6_functions.md` Q1–4 | 2.5h |
+| 7 | L07 Pointers★ | `02_textbook/L08_pointers.md`, `03_drills/L7_pointers.md` Q1–4, draw memory diagrams | 3h |
 
 ### Week 2: Finish Pass 1 + Mock A (Days 8–14)
 
 | Day | Activity | Files | Time |
 |-----|----------|-------|------|
-| 8 | L08 Strings + L09 Structs | `02_textbook/L08`, `02_textbook/L09`, `03_drills/L8` Q1–3 | 2h |
-| 9 | L10 File I/O + L11 Recursion | `02_textbook/L10`, `02_textbook/L11` | 2h |
-| 10 | Spaced review (Day+7 for L01–L03) | `03_drills/L1`–`L3` full sets | 2h |
-| 11 | Spaced review (Day+7 for L04–L06) | `03_drills/L4`–`L6` full sets | 2.5h |
-| 12 | Spaced review (Day+7 for L07) + weak topic | `03_drills/L7`, `10_remediation/` if needed | 2.5h |
+| 8 | L08 Strings + L09 Structs | `02_textbook/L06_strings.md`, `02_textbook/L09_structs.md`, `03_drills/L8_exam.md` Q1–3 | 2h |
+| 9 | L10 Algorithms + L11 Recursion | `02_textbook/L10_algorithms.md`, `02_textbook/L11_recursion.md` | 2h |
+| 10 | Spaced review (Day+7 for L01–L03) | `03_drills/L1_variables.md`–`L3_conditions.md` full sets | 2h |
+| 11 | Spaced review (Day+7 for L04–L06) | `03_drills/L4_loops.md`–`L6_functions.md` full sets | 2.5h |
+| 12 | Spaced review (Day+7 for L07) + weak topic | `03_drills/L7_pointers.md`, `10_remediation/` if needed | 2.5h |
 | 13 | Mock A prep: skim all topics, review notes | All `02_textbook/` chapters, 15 min each | 2h |
-| 14 | **Mock A — Full Simulation** | `05_mock-exams/mock-A`, 90-min timed | 2.5h |
+| 14 | **Mock A — Full Simulation** | `05_mock-exams/mock-exam-A.md`, 90-min timed | 2.5h |
 
 **Phase 1 Go/No-Go Gate:**  
 - Mock A ≥60% → **proceed to Phase 2**  
@@ -64,13 +71,13 @@ nav_order: 4
 
 | Day | Activity | Files | Time |
 |-----|----------|-------|------|
-| 15 | L04★ Loops — full drills | `03_drills/L4` Q1–8, timed | 2.5h |
-| 16 | L05★ Arrays — full drills | `03_drills/L5` Q1–8, timed | 2.5h |
-| 17 | L06★ Functions — full drills | `03_drills/L6` Q1–8, timed | 2.5h |
-| 18 | L07★ Pointers — full drills + diagrams | `03_drills/L7` Q1–8, all with memory diagrams | 3h |
-| 19 | L08 Strings — full drills | `03_drills/L8` Q1–6 | 2h |
-| 20 | L09–L11 self-quiz pass | Write struct/fopen/recursion from memory | 2h |
-| 21 | Spaced review (Day+14 for L01–L04) | `03_drills/L1`–`L4`, `05_mock-exams/mock-A` §1–2 | 2.5h |
+| 15 | L04★ Loops — full drills | `03_drills/L4_loops.md` Q1–8, timed | 2.5h |
+| 16 | L05★ Arrays — full drills | `03_drills/L5_arrays.md` Q1–8, timed | 2.5h |
+| 17 | L06★ Functions — full drills | `03_drills/L6_functions.md` Q1–8, timed | 2.5h |
+| 18 | L07★ Pointers — full drills + diagrams | `03_drills/L7_pointers.md` Q1–8, all with memory diagrams | 3h |
+| 19 | L08 Strings — full drills | `03_drills/L8_exam.md` Q1–6 | 2h |
+| 20 | L09–L11 self-quiz pass | Write struct/sort/recursion from memory | 2h |
+| 21 | Spaced review (Day+14 for L01–L04) | `03_drills/L1_variables.md`–`L4_loops.md`, `05_mock-exams/mock-exam-A.md` §1–2 | 2.5h |
 
 ### Week 4: Second Pass Focus + Mock B (Days 22–28)
 
@@ -78,11 +85,11 @@ nav_order: 4
 |-----|----------|-------|------|
 | 22 | Weak topic remediation 1 | `10_remediation/` for lowest Tier-1 score | 2.5h |
 | 23 | Weak topic remediation 2 | `10_remediation/` for second weakest score | 2.5h |
-| 24 | Spaced review (Day+14 for L05–L07) | `03_drills/L5`–`L7`, `05_mock-exams/mock-A` §3–4 | 2.5h |
+| 24 | Spaced review (Day+14 for L05–L07) | `03_drills/L5_arrays.md`–`L7_pointers.md`, `05_mock-exams/mock-exam-A.md` §3–4 | 2.5h |
 | 25 | Combined programs: write from scratch | Write 3 programs combining Tier-1 topics, no notes | 2.5h |
 | 26 | Mock B prep: timed mini-drills | 10 min per topic, all 11 topics | 2h |
 | 27 | Mock B prep: review Mock A wrong answers | `06_progress/student-progress.md` score log | 1.5h |
-| 28 | **Mock B — Full Simulation** | `05_mock-exams/mock-B`, 90-min timed | 2.5h |
+| 28 | **Mock B — Full Simulation** | `05_mock-exams/mock-exam-B.md`, 90-min timed | 2.5h |
 
 **Days 29–30: Mock B Debrief**
 
@@ -107,8 +114,8 @@ nav_order: 4
 |-----|----------|-------|------|
 | 31 | Lowest-mastery topic: full remediation | `10_remediation/` + full drill set | 3h |
 | 32 | Second lowest: full remediation | `10_remediation/` + full drill set | 3h |
-| 33 | Spaced review (Day+30 for L04–L05) | `05_mock-exams/mock-B` §1–2 | 2.5h |
-| 34 | Spaced review (Day+30 for L06–L07) | `05_mock-exams/mock-B` §3 + `mock-C` §1 | 2.5h |
+| 33 | Spaced review (Day+30 for L04–L05) | `05_mock-exams/mock-exam-B.md` §1–2 | 2.5h |
+| 34 | Spaced review (Day+30 for L06–L07) | `05_mock-exams/mock-exam-B.md` §3 + `05_mock-exams/mock-exam-C.md` §1 | 2.5h |
 | 35 | L08–L11 comprehensive review | Full drill sets L8 + self-quiz L9–L11 | 2h |
 
 ### Week 6: Tier-1 Polish + Mock C Prep (Days 36–42)
@@ -119,9 +126,9 @@ nav_order: 4
 | 37 | L05★ exam-mode: write without any reference | Blank paper, 30 min, then check | 2h |
 | 38 | L06★ exam-mode: write without any reference | Blank paper, 30 min, then check | 2h |
 | 39 | L07★ exam-mode: write without any reference | Blank paper, 30 min + diagrams | 2.5h |
-| 40 | Mock C prep: review all mock exam formats | `05_mock-exams/mock-A`, `mock-B` answer patterns | 2h |
+| 40 | Mock C prep: review all mock exam formats | `05_mock-exams/mock-exam-A.md`, `mock-exam-B.md` answer patterns | 2h |
 | 41 | Final weak-topic check: anything <75% | `10_remediation/` + `03_drills/` targeted | 2.5h |
-| 42 | **Mock C — Full Simulation** | `05_mock-exams/mock-C`, 90-min timed | 2.5h |
+| 42 | **Mock C — Full Simulation** | `05_mock-exams/mock-exam-C.md`, 90-min timed | 2.5h |
 
 **Days 43–45: Mock C Debrief**
 

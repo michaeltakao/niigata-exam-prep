@@ -126,9 +126,6 @@ def _convert_line_inline_math(line: str) -> str:
     """Convert inline $...$ on a single line, skipping $$ spans."""
     # First pass: protect $$ ... $$ spans by replacing with placeholder
     # (block math that might appear inline in a table cell)
-    protected = []
-    out_parts = []
-    idx = 0
     s = line
     # Replace $$...$$ with placeholders
     placeholder_map: dict[str, str] = {}
